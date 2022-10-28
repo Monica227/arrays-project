@@ -60,14 +60,14 @@ console.log("Average number of letters per name" + averageLetters);
 //2b.	Use a loop to iterate through the array again and concatenate all the names together, separated by spaces. 
 var concatName = "";
 var names = ["Sam, Tommy, Tim, Sally, Buck, Bob"]
-for(let i = 0; i < names.length; i++) { // loop that concatenates all the names together. (2b.)
+for(let i = 0; i < names.length; i++) { // loop concatenates all the names together.
     concatName += names[i] + (" ");
     }
     console.log(concatName);
 
 
 //3.	How do you access the last element of any array?
-// Use: var lastelement = array[array.length - 1];
+// Use: var lastElement = array[array.length - 1];
 
 
 //4.	How do you access the first element of any array?
@@ -81,10 +81,11 @@ For example:
 namesArray = ["Kelly", "Sam", "Kate"] //given this array
 nameLengths = [5, 3, 4] //create this new array */
 
-var namelengths = [];
-
-
-
+var namelengths = []; 
+for(let i = 0; i < names.length; i++){ // loop runs all of the names and puts them into the new array.
+    nameLengths.push(names[i].length); // push adds the name length 
+}
+console.log(nameLengths);
 
 
 //6.	Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array. 
