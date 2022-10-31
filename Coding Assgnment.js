@@ -17,8 +17,8 @@ console.log("Ages.length", ages.length - 1); //Length of ages array is 7 since t
 •	ages[7] – ages[0] is not allowed! */
 console.log(ages[0]); // This prints out the first element of the ages array which is 3.
 console.log(ages[ages.length - 1]); // This prints out the last element of the ages array which is 93.
-let firstelement = ages[0] // Declares variable for first element.
-let lastelement = ages[ages.length - 1] 
+var firstelement = ages[0] // Declares variable for first element.
+var lastelement = ages[ages.length - 1] 
 console.log(lastelement - firstelement); //Values of the last and first element in the array were programtically subtracted 93 -3 = 90.
 
 //1b.	Add a new age to your array and repeat the step above to ensure it is dynamic. (works for arrays of different lengths).
